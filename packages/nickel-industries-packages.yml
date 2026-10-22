@@ -1,0 +1,14 @@
+generated: '2026-10-22'
+method: none
+name: Nickel Industries packages
+note: Checked, nothing found. Nickel Industries is an ASX-listed nickel miner/processor with no developer portal or public API; no first-party SDK or CLI is published. npm search for "nickel-industries" returned only unrelated packages, pypi.org/pypi/nickel-industries/json returned 404, and GitHub repository search for "nickelindustries" returned 0 results.
+checked:
+- url: https://registry.npmjs.org/-/v1/search?text=nickel-industries&size=3
+  status: 200
+  result: no matching package
+- url: https://pypi.org/pypi/nickel-industries/json
+  status: 404
+- url: https://api.github.com/search/repositories?q=nickelindustries
+  status: 200
+  result: 0 repositories
+packages: []

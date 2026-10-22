@@ -1,0 +1,18 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/nickel-industries/integrations
+- https://n8n.io/integrations/nickel-industries/
+- https://composio.dev/toolkits/nickel-industries
+- https://monid.ai/tools/nickel-industries
+checked:
+- https://composio.dev/toolkits/nickel-industries
+- https://monid.ai/tools/nickel-industries
+- https://n8n.io/integrations/nickel-industries/
+- https://zapier.com/apps/nickel-industries/integrations
+- https://nickelindustries.com/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Mining company with no public API, app listing or partner integration page; the homepage (200) links no integrations.

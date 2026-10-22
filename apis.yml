@@ -1,23 +1,81 @@
 aid: nickel-industries
+
 name: Nickel Industries
-description: 'Nickel Industries is a company surfaced via the API Evangelist harvest backlog (source:
-  australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+description: Nickel Industries Limited is an ASX-listed company (ASX:NIC) that owns a portfolio of nickel mining and low-cost
+  downstream nickel processing assets in Indonesia, including RKEF and HPAL operations developed in collaboration with the
+  Tsingshan group at the Indonesia Morowali and Weda Bay industrial parks. It produces nickel pig iron for the stainless steel
+  industry and is transitioning production toward battery-grade nickel for the electric vehicle supply chain. Surfaced via
+  the API Evangelist harvest backlog (australia-apidays-2026); its website publishes no developer portal or public API.
+
 url: https://raw.githubusercontent.com/api-evangelist/nickel-industries/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Mining
+- Nickel
+- Metals
+- Electric Vehicles
+- Stainless Steel
+- Indonesia
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://nickelindustries.com/carbon/assets/0007e8/000004/nickel-industries-logo.svg
+
 common:
+- type: Hosts
+  url: hosts/nickel-industries-hosts.yml
+- type: DomainSecurity
+  url: security/nickel-industries-domain-security.yml
 - type: Website
   url: https://nickelindustries.com/
+- type: PrivacyPolicy
+  url: https://nickelindustries.com/privacy-policy
+- type: Support
+  url: https://nickelindustries.com/general-enquiries/
+- type: InvestorRelations
+  url: https://nickelindustries.com/investor-centre/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Homepage title and body name "Nickel Industries Limited ... ASX-listed (ASX:NIC)"; no developer portal, API docs
+    or API links found on the site.
+  evidence:
+  - url: https://nickelindustries.com/
+    status: 200
+  - url: https://nickelindustries.com/privacy-policy
+    status: 200
+  - url: https://nickelindustries.com/general-enquiries/
+    status: 200
+  - url: https://nickelindustries.com/investor-centre/
+    status: 200
+  - url: https://nickelindustries.com/carbon/assets/0007e8/000004/nickel-industries-logo.svg
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

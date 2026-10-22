@@ -1,0 +1,59 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://nickelindustries.com/privacy-policy
+note: >-
+  Nickel Industries (ASX: NIC) is a nickel miner and processor with no developer API. The website's only
+  legal page is its Privacy Policy, linked from the homepage footer and found by the pre-flight crawl. The
+  homepage also links /about-us/corporate-governance/, which is about corporate governance, not data or
+  product regulation. The Privacy Policy covers only the information website. It speaks to data-subject
+  requests and names one third-party processor (Google Analytics). It says nothing about retention,
+  residency, incident notification, AI or any of the other catalog signals, so no entries are written for them.
+signals:
+  data_subject_request:
+    url: https://nickelindustries.com/privacy-policy
+    section: How we deal with complaints and requests
+    stated_sla: 30 days
+    rights_named: [access, correction, complaint]
+    legal_basis: Privacy Act 1988 (Cth), Australian Privacy Principles
+    evidence:
+    - source: https://nickelindustries.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You may request access to Personal Information about you that we hold and you may ask us to correct
+        your Personal Information if you find that it is not accurate, up-to-date or complete. You may also
+        make a complaint about our handling of your Personal Information. These services are free of charge.
+    - source: https://nickelindustries.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You can contact us by email, or send your request or complaint to the postal address below. We
+        undertake to respond within 30 days. If the request or complaint will take longer to resolve, we will
+        provide you with a date by which we expect to respond.
+    - source: https://nickelindustries.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        This online service is bound by the provisions of the Privacy Act 1988 (Cth), including the Australian
+        Privacy Principles.
+    note: >-
+      Access and correction rights, plus a complaint route, free of charge and with a stated 30-day response
+      commitment under the Australian Privacy Act. Deletion and portability are not named. The policy covers
+      only the website (it still calls itself "nickelmines.com.au"), not any product or service.
+  subprocessors:
+    url: https://nickelindustries.com/privacy-policy
+    section: Website analytics
+    processors_named: [Google Analytics]
+    evidence:
+    - source: https://nickelindustries.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Our website uses Google Analytics, a service which transmits website traffic data to Google servers.
+        Google Analytics does not identify individual users or associate your IP address with any other data
+        held by Google.
+    note: >-
+      Only one third-party processor is disclosed, and only for website analytics. No subprocessor list is
+      published. The policy also says "we do not share Personal Information with other companies" except in
+      cases of unlawful activity or serious threats to health and safety.

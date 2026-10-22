@@ -1,0 +1,20 @@
+name: Nickel Industries MCP Server
+description: No official MCP server (remote or local) is published by Nickel Industries Limited, and there is no public OpenAPI contract from which to derive a candidate tool list. Nickel Industries is an ASX-listed nickel miner and processor with no developer portal.
+generated: '2026-10-22'
+method: none
+status: none
+source: https://nickelindustries.com/
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://nickelindustries.com/
+  status: 200
+  note: Corporate site; no developer, API or MCP links (preflight probe 2026-10-22, contract_discovery verdict mcp absent on nickelindustries.com and api.nickelindustries.com).
+- url: https://nickelindustries.com/llms.txt
+  status: 200
+  note: Empty body (0 bytes); no llms.txt published.
+- search: '"Nickel Industries" MCP server OR API developer'
+  note: Web search 2026-10-22 returned no MCP server or API associated with the company.
